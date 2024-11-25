@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  db:
+    image: mysql:latest  # Use the latest version of MySQL
+    container_name: usiu_feedback_db  # Optional, can name it anything
+    environment:
+      MYSQL_ROOT_PASSWORD:   # Replace with your root password
+      MYSQL_DATABASE: usiu  # Replace with your database name
+      MYSQL_USER: root  # Replace with your database user
+      MYSQL_PASSWORD:   # Replace with your user's password
+    ports:
+      - "3306:3306"  # Exposes the database on localhost:3306
+    volumes:
+      - db_data:/var/lib/mysql  # Persists data
+volumes:
+  - ./path/to/your/directory:/path/in/container/home.php
+
+volumes:
+  db_data:

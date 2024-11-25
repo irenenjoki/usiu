@@ -1,0 +1,98 @@
+/* Styling for the body with background image */
+body {
+    font-family: Arial, sans-serif;
+    margin: 400;
+    padding: 20px;
+    background-image: url('https://images.pexels.com/photos/7135016/pexels-photo-7135016.jpeg?auto=compress&cs=tinysrgb&w=600');
+    background-size: cover; /* Ensure the image covers the entire background */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-color: #f0f0f0; /* Add a fallback background color */
+}
+
+/* Form styling */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.8); /* White background with some transparency for readability */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow to lift the form */
+}
+
+/* Input fields styling */
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #080808;
+    border-radius: 4px;
+    box-sizing: border-box; /* Ensure padding and borders are included in width */
+}
+
+/* Button styling */
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%; /* Ensure button takes full width on mobile */
+}
+
+button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Heading styling */
+h2 {
+    text-align: center;
+    color: rgb(5, 5, 5); /* Dark text for contrast */
+}
+
+/* Link styling */
+a {
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    color: #007bff; /* Blue link color */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    
+}
+
+/* Style for logout button */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+/* Media queries for smaller screens */
+@media (max-width: 600px) {
+    body {
+        background-size: 170%; /* Adjust background size for smaller screens */
+    }
+
+    form {
+        max-width: 100%; /* Ensure the form takes up most of the space on small screens */
+        margin: 0 10px; /* Add some side padding for better mobile view */
+    }
+
+    button {
+        width: 100%; /* Make buttons full-width on mobile */
+    }
+}
